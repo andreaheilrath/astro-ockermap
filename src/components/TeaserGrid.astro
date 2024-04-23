@@ -5,21 +5,21 @@ const allPosts = await Astro.glob("../pages/posts/*.mdx");
 
 /* Choose posts and in which order to display them */
 const selectedPosts = [
-    "Sample 1",
+    "Sample 1", 
     "Sample 2",
     "Sample 3"
 ];
 
 /* Filter the posts by the selected posts */
 const filteredPosts = allPosts.filter((post) =>
-    selectedPosts.includes(post.frontmatter.title)
+    allPosts.includes(post.frontmatter.title)
 );
 
 /* Sort the posts by the order of the selected posts */
 const sortedPosts = filteredPosts.sort(
     (a, b) =>
-        selectedPosts.indexOf(a.frontmatter.title) -
-        selectedPosts.indexOf(b.frontmatter.title)
+        allPosts.indexOf(a.frontmatter.title) -
+        allPosts.indexOf(b.frontmatter.title)
 );
 ---
 
