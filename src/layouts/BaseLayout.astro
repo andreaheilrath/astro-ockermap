@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+import "../styles/variables.css";
+import "../styles/typography.css";
+
+import Navigation from "../components/Header.astro";
+import Footer from "../components/Button-Box.astro";
+
+
+const { pageTitle } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{pageTitle}</title>
+    </head>
+
+    <body>
+        <Navigation />
+        <div class="main-container">
+            <slot />
+            <Footer />
+        </div>        
+    </body>
+</html>
+
+
+<style>
+
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: var(--color-palette-grey-100);
+        color: var(--color-text-primary);
+        font-family: var(--font-family-body);
+        line-height: var(--leading-200);                
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    .main-container {
+        background-color: var(--color-palette-grey-100);
+        padding-top:60px;
+        padding-bottom: 0px;        
+        padding-right: 48px;
+        padding-left: 48px;
+        margin: auto; 
+        gap: var(--spacing-600);
+    }
+
+    @media screen and (max-width: 1000px) {
+    .main-container {
+        width: 100%;
+        padding-right: 32px;
+        padding-left: 32px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .main-container {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+    }
+</style>

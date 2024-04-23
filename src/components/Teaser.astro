@@ -1,0 +1,40 @@
+---
+const {
+    title,
+    url = "#",
+    description = "",
+    image = "/src/imgs/compressed/ocre.jpg"
+} = Astro.props;
+
+const imageUrl = `background-image: url("${image}")`
+---
+
+<a href={url} class="teaser body-m">
+        <div class="image" style={imageUrl}></div>
+    <div>{title}</div>
+</a>
+
+<style>
+    .teaser {
+        width: 100%;
+        color: var(--color-text-primary);
+        text-decoration: none;
+        font-size: var(--font-size-300);
+        margin-bottom: 0;
+    }
+
+    .teaser:hover {
+        text-decoration: underline;
+    }
+
+    .image {
+        margin-bottom: 10px;
+        width: 100%;
+        aspect-ratio: 4/3;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: var(--border-radius-100);
+    }
+
+</style>
