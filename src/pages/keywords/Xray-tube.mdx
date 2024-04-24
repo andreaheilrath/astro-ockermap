@@ -1,0 +1,28 @@
+---
+layout: '../../layouts/BlogPostLayout.astro'
+title: "Röntgenröhre"
+description: "Add desciption here"
+---
+import Figure from '/src/components/Figure.astro'
+import LaTeX from '/src/components/LaTeX.astro'
+
+# Röntgenröhre (X-ray tube)
+
+## Erzeugung von Röntgenstrahlung:
+
+#### Eine Röntgenröhre ist eine einfache Möglichkeit, Röntgenstrahlung zu erzeugen. Dabei ist die, durch die Röntgenröhre emittierte Strahlung, durch eine große Bandbreite und charakteristische Linien charakterisiert. 
+
+<Figure url="/src/imgs/keywords/Xray_tube.png" text="example caption"/>
+&nbsp;
+
+Die Funktionsweise ist relativ simpel. In einer vakuumierten Glasröhre wird eine Heizspannung an einen dünnen Draht angelegt und heizt diesen auf, bis er glüht. An dieser Glühkathode treten Elektronen aus dem Draht aus. Diese freien Ladungsträger werden nun in einem elektrischen Feld, welches zwischen der Kathode und einer Anode anliegt, beschleunigt. Dabei werden Beschleunigungsspannungen von 1kV - 150kV zwischen der Kathode und Anode angelegt. Die Elektronen erhalten dabei energie aus dem elektrischen Feld, welches direkt proportional zur Beschleunigungsspannung ist:
+
+<LaTeX formula='E_{kin} = U_e \cdot e' />
+&nbsp;
+
+Hierbei ist *e* die Elementarladung, also die kleinste mögliche Ladungsmenge eines Elektrons. Um diesen Strahl aus Elektronen zu fokussieren, ist ein sogenannter ringförmiger Wehneltzylinder in der Nähe der Kathode angebracht. Dieser ist negativ geladen und fokussiert somit die ebenfalls negativ geladenen Elektronen durch elektrische Abstoßung. Beim Auftreffen der Elektronen an der Anode, die meist aus einem dichten Material besteht, werden die Elektronen an den Atomrümpfen abgebremst und emittieren dabei ihre verlorene Energie als Röntgenstrahlung. Da das Abbremsen ein statistischer Prozess ist, zeigt diese sogenannte Bremsstrahlung ein kontinuierliches Spektrum. 
+
+<Figure url="/src/imgs/keywords/5090.png" text="example caption" />
+&nbsp;
+
+Zudem können die beschleunigten Elektronen mit den Elektronen im Anodenmaterial stoßen und durch Übertragung ihrer Energie in ein höheres Energieniveau anregen. Fallen diese angeregten Elektronen wieder in ihr ursprüngliches Niveau zurück, geben sie die aufgenommene Energie wieder unter Emission von Licht mit genau dieser Energie ab. Diese Strahlung nennt man dann charakteristische Linienstrahlung (hier erfährst du mehr zu Emissionslinien). Diese charakteristischen Linien sind wie der Fingerabdruck des Anodenmaterials. Bremsstrahlung und charakteristische Linienstrahlung gemeinsam bilden das Emissionsspektrum der Röntgenröhre.
