@@ -1,0 +1,22 @@
+---
+const {text = 'Caption', url = '#'} = Astro.props;
+---
+
+<figure>
+    <img src={url} alt="Figure" style="width:100%" />
+    <figcaption>{text}</figcaption>
+</figure> 
+
+
+<style>
+    figure {
+        margin: auto;
+    }
+
+    figcaption {
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+
+</style>

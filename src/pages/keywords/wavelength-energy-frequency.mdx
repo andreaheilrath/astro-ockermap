@@ -1,0 +1,38 @@
+---
+layout: '../../layouts/BlogPostLayout.astro'
+title: "Wellenlänge, Energie und Frequenz"
+description: "Add desciption here"
+---
+import Figure from '/src/components/Figure.astro'
+import LaTeX from '/src/components/LaTeX.astro'
+
+# Wellenlänge, Energie und Frequenz
+
+<Figure url="/src/imgs/compressed/vis_light_energy.jpg" text='test caption' />
+
+&nbsp;
+
+#### Licht ist eine elektromagnetische Welle, die durch ihre Wellenlänge und Energie beschrieben werden kann. Das gesamte Lichtspektrum umfasst den Bereich von hochenergetischer Gammastrahlung bis hin zu niederenergetischen Radiowellen. Dazwischen liegen dann z.B. die Röntgenstrahlen, das sichtbare Licht und auch Mikrowellen. Oft wird im sichtbaren Bereich auch das Licht anhand seiner Farbe charakterisiert. So besitzt jede Farbe eine bestimmte Wellenlänge und Energie. 
+
+Die **Wellenlänge** (Formelzeichen *λ*, gespr. "Lambda") gibt dabei an, wie nahe aneinander die einzelnen Wellenberge liegen. Eine kleine Wellenlänge heißt hierbei, dass viele Wellenberge dicht aufeinander folgen (links in Abb. 1), während bei einer großen Wellenlänge die einzelnen Wellenberge weit auseinanderliegen (rechts in Abb. 1). Die Wellenlänge ist dabei eng mit der **Frequenz** (Formelzeichen *f* oder *ν*, gespr. “Nü”) der Welle, durch die Gleichung: 
+
+<LaTeX formula="\lambda = c/f" />
+
+verbunden. Hierbei ist c die Lichtgeschwindigkeit.
+
+Die **Energie** (Formelzeichen *E*) einer solchen Lichtwelle ist dabei direkt proportional zu der Frequenz der Welle: 
+
+<LaTeX formula="E = h\nu" /> 
+
+Dabei ist *h* das Plancksche Wirkungsquantum, eine Naturkonstante. Je höher also die Frequenz, desto energiereicher die Strahlung und desto kleiner die Wellenlänge. 
+
+&nbsp;
+
+#### Einige Werte für verschiedene Strahlungsarten:
+
+| **Art der Strahlung** 	| **Wellenlänge** *λ* (in m)  	| **Frequenz** *<LaTeX formula="\nu" />* (in Hertz Hz) 	| **Energie**  *E* (in Elektronenvolt eV) 	|
+|-----------------------	|-----------------------------	|------------------------------------------------------	|-----------------------------------------	|
+| Röntgenstrahlung      	| 0.01 nm - 12 nm             	| 3.0 x 10<sup>16</sup> - 3.0 x 10<sup>19</sup> Hz     	| 124 eV - 124 keV                        	|
+| sichtbares Licht      	| 380 nm - 780 nm             	| 3.9 x 10<sup>14</sup> - 7.9 x 10<sup>15</sup> Hz     	| 1.6 eV - 3.3 eV                         	|
+| Mikrowellen           	| 1 mm - 1 m                  	| 3.0 x 10<sup>8</sup> - 3.0 x 10<sup>11</sup> Hz      	| 1.24 µeV - 1.24 meV                     	|
+

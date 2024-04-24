@@ -5,21 +5,22 @@ const allPosts = await Astro.glob("../pages/posts/*.mdx");
 
 /* Choose posts and in which order to display them */
 const selectedPosts = [
-    "Sample 1", 
-    "Sample 2",
-    "Sample 3"
+    "Paper The Reading Hermit", 
+    "Untersuchung von Ocker Pigmenten",
+    "X-ray and XRF",
+    "Röntgenfluoreszenzanalyse am Beipiel 'The Reading Hermit'"
 ];
 
 /* Filter the posts by the selected posts */
 const filteredPosts = allPosts.filter((post) =>
-    allPosts.includes(post.frontmatter.title)
+    selectedPosts.includes(post.frontmatter.title)
 );
 
 /* Sort the posts by the order of the selected posts */
 const sortedPosts = filteredPosts.sort(
     (a, b) =>
-        allPosts.indexOf(a.frontmatter.title) -
-        allPosts.indexOf(b.frontmatter.title)
+        selectedPosts.indexOf(a.frontmatter.title) -
+        selectedPosts.indexOf(b.frontmatter.title)
 );
 ---
 
