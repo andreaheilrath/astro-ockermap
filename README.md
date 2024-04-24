@@ -10,3 +10,7 @@ Important for working with mdx files
 
 Please work with compressed images, and use squoosh
 https://squoosh.app/
+
+Adding [katex](https://danidiaztech.com/create-astro-latex-component/) with
+
+```npm i katex```
