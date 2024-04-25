@@ -1,0 +1,62 @@
+---
+
+---
+
+<div class="footer">
+    <p> <a href="/about" class="about">about</a>
+        | <a href="/impressumt" class="impressum">impressum</a>
+        | Visit us at <a href="https://project-sci.com/" class="sci-com">project-sci.com</a>
+    </p>
+</div>
+
+<style>
+.footer {
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+        padding: 0px 48px;
+        width: 100%;
+        height: 80px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+        text-align: center;
+}
+    .sci-com {
+        font-size: var(--font-size-300);
+        font-weight: var(--font-weight-regular);
+        font-family: var(--font-family-headline); 
+        color: rgb(4, 0, 255);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .about {
+        font-size: var(--font-size-300)x;
+        font-weight: var(--font-weight-regular);
+        font-family: var(--font-family-headline); 
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .impressum {
+        font-size: var(--font-size-300)x;
+        font-weight: var(--font-weight-regular);
+        font-family: var(--font-family-headline); 
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+    .header {
+        padding: 0px 32px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .header {
+        padding: 0px 12px;
+        }
+    }
+</style>
