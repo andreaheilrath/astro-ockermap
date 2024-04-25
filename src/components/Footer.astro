@@ -2,16 +2,17 @@
 
 ---
 
-<div class="footer">
+<div class="footer" style="text-align: center;">
     <p> <a href="/about" class="about">about</a>
         | <a href="/impressumt" class="impressum">impressum</a>
-        | Visit us at <a href="https://project-sci.com/" class="sci-com">project-sci.com</a>
+        | Visit us at <a href="https://project-sci.com/" class="sci-com">project-sci.com</a> and <a href="https://xstageproject.com/" class="xstage">xstageproject.com</a>
     </p>
+    <p style="font-size: var(--font-size-200);">The content on this website was created by students. No claim is made as to the completeness and accuracy of the content presented. </p>
 </div>
 
 <style>
 .footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
         display: flex;
         padding: 0px 48px;
@@ -20,9 +21,17 @@
         flex-wrap: wrap;
         align-content: space-between;
         justify-content: center;
-        text-align: center;
 }
     .sci-com {
+        font-size: var(--font-size-300);
+        font-weight: var(--font-weight-regular);
+        font-family: var(--font-family-headline); 
+        color: rgb(4, 0, 255);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .xstage {
         font-size: var(--font-size-300);
         font-weight: var(--font-weight-regular);
         font-family: var(--font-family-headline); 
