@@ -2,15 +2,22 @@
 
 Simple template for [astro](https://astro.build/) static site generator.
 
-Here's a how to for installing astro [https://docs.astro.build/en/install/auto/](https://docs.astro.build/en/install/auto/)
+## Prerequisites
 
-Important for working with mdx files
+Install [Node.js](https://nodejs.org/)
+Then run ```npm install``` in the astro-ockermap folder.
+All dependencies (listed in package.json and package-log) should be installed automatically.
 
+## Extensions used
+
+Astro mdx 
 ```npx astro add mdx ```
-
-Please work with compressed images, and use squoosh
-https://squoosh.app/
 
 Adding [katex](https://danidiaztech.com/create-astro-latex-component/) with
 
 ```npm i katex```
+
+## General remarks
+
+Please work with compressed images, and use squoosh
+https://squoosh.app/
