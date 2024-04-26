@@ -1,0 +1,69 @@
+---
+const photos = await Astro.glob("../imgs/homepage/*png");
+const tiles = ["2", "3", "2", "2", "2", "3", "2", "2"];
+---
+
+<script>
+  import {masonry} from 'masonry-layout';
+</script>
+
+<div class="grid" data-masonry='{"gutter": 10, "columnWidth": 360, "itemSelector": ".grid-item" }'>
+  <div class="grid-item grid-item--height1"></div>  {/* 1 */}
+  <div class="grid-item grid-item--height2"></div>  {/* 2 */}
+  <div class="grid-item grid-item--height3"></div>  {/* 3 */}
+  <div class="grid-item grid-item--height2"></div>  {/* 4 */}
+  <div class="grid-item grid-item--height3"></div>  {/* 5 */}
+  <div class="grid-item grid-item--height1"></div>  {/* 6 */}
+  <div class="grid-item grid-item--height3"></div>  {/* 7 */}
+  <div class="grid-item grid-item--height2"></div>  {/* 8 */}
+  <div class="grid-item grid-item--height1"></div>  {/* 9 */}
+</div>
+
+<style>
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+  counter-reset: grid-item;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 360px;
+  height: 400px;
+  float: left;
+  background: rgb(240, 171, 122);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.grid-item--height1 { height: 200px; }
+.grid-item--height2 { height: 280px; }
+.grid-item--height3 { height: 320px; }
+
+.grid-item:before {
+  counter-increment: grid-item;
+  content: counter(grid-item);
+  display: block;
+  color: white;
+  padding-top: 0.2em;
+  text-align: center;
+  font-size: 1.4rem;
+}
+</style>
+
+

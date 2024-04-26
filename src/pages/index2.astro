@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/Button.astro";
+import MasonryGrid from "../components/MasonryGrid.astro";
+
+const pageTitle = "OCRE MAP";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <MasonryGrid />
+</BaseLayout>
+
+<style>
+    .text {
+        width: 100%;
+        max-width: 1200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-600);
+        padding: 14vh 0;
+    }
+</style>
