@@ -6,19 +6,22 @@ description: "Add desciption here"
 import Figure from '/src/components/Figure.astro'
 import LaTeX from '/src/components/LaTeX.astro'
 
+import schalenmodell from "/src/imgs/keywords/schalenmodell.png";
+import abs-emiss from "/src/imgs/keywords/abs-emiss.gif";
+
 # Absorption und Emission von Licht
 
 #### Die Absorption und Emission von elektromagnetischer Strahlung (Licht) sind zwei grundlegende Prozesse in der Physik. Sie spielen sich in den Atomen, die alle Materie bilden, ab. Dabei nimmt das Atom Energie auf (Absorption) oder gibt eben jene in Form von Strahlung ab (Emission). 
 
 Um diesen Prozess besser zu verstehen, stellen wir uns das Atom als Kugel vor, um die sich Elektronen auf Bahnen im immer selben Abstand bewegen. Diese Bahnen nennt man in der Physik Schalen. Je nachdem, an welcher Stelle im Periodensystem das Atom steht, befinden sich mehr oder weniger Elektronen auf jeder Schale. Die Schalen werden von innen nach außen befüllt und mit Großbuchstaben, beginnend mit K, bennant.
 
-<Figure url="/src/imgs/keywords/schalenmodell.png" text='test caption' />
+<Figure url={schalenmodell.src} text='test caption' />
 
 &nbsp;
 
 Trifft nun Licht mit einer bestimmten Energie auf das Atom, kann es ein Elektron von einer inneren Schale in eine höhere, äußere Schale anheben. Dabei gibt das Licht seine Energie an das Atom ganz oder in Teilen ab. Das Elektron verlässt nun seine Bahn und bewegt sich ab sofort auf einer anderen Bahn um den Kern des Atoms. Dieser Prozess wird **Absorption** genannt und ist in Abb. 1 a) dargestellt. E<sub>1</sub> und E<sub>2</sub> sind hier die Bezeichnungen der Schalen (oder auch Energieniveaus, s.u.), wobei E<sub>1</sub> näher am Atomkern liegt als E<sub>2</sub>. Bei der <a href="/keywords/XRF">Röntgenfluoreszenzanalyse (RFA)</a> hat das einfallende Licht so viel Energie, dass das Elektron von dem Atom entfernt wird und nicht weiter gebunden ist. 
 
-<Figure url="/src/imgs/keywords/abs-emiss.gif" text='test caption' />
+<Figure url={abs-emiss.src} text='test caption' />
 
 &nbsp;
 
