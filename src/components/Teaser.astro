@@ -6,11 +6,10 @@ const {
     image = "/src/imgs/compressed/ocre.jpg"
 } = Astro.props;
 
-const imageUrl = `background-image: url("${image}")`
 ---
 
 <a href={url} class="teaser body-m">
-        <div class="image" style={imageUrl}></div>
+        <div class="image" style=`background-image: url("${image}")`></div>
     <div>{title}</div>
 </a>
 
