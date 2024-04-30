@@ -7,6 +7,7 @@ export default defineConfig({
   integrations: [mdx()],
 
   site: `https://andreaheilrath.github.io/astro-ockermap/`,
+  base: '/astro-ockermap',
   output: 'static',
   outDir: './docs',
   build: {
