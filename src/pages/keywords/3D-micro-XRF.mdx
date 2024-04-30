@@ -1,10 +1,9 @@
 ---
-layout: '../../layouts/BlogPostLayout.astro'
+layout: "../../layouts/BlogPostLayout.astro"
 title: "Konfokale 3D mikro-Röntgenfluoreszenzanalyse"
 description: "Add desciption here"
 ---
-import Figure from '/src/components/Figure.astro';
-import 3DRFA from '../imgs/keywords/3D-µRFA.png';
+import Figure from '/src/components/Figure.astro'
 
 # Konfokale 3D mikro-Röntgenfluoreszenzanalyse (mirko-RFA, micro-XRF)
 
@@ -12,8 +11,11 @@ Die konfokale 3D mikro-RFA basiert auf demselben Messprinzip wie die <a href="/k
 Der Versuchsaufbau besteht ebenso aus einer Röntgenröhre, deren Strahlung auf die Probe fokussiert wird und einem Detektor, der die Fluoreszenzstrahlung in Abhängigkeit ihrer Energie messen kann. 
 Anders als bei der 2D RFA ist hier jedoch vor dem Detektor eine weitere Röntgenlinse angebracht. Da nun zwei dieser Optiken im Aufbau vorhanden sind, beide mit einem definierten Fokus, wird ein Fokusvolumen kreiert. Nur Strahlung aus diesem Bereich kann in den Detektor gelangen. Damit erreicht man eine definierte Ortsauflösung im 50 Mikrometer Bereich.
 
-<Figure url={3DRFA.src} text="Schematischer Aufbau der konfokalen 3D µ-RFA. Röntgenröhre und Detektor stehen in 90°-Winkel zueinander um sicher zu stellen, dass nur Fluoreszenzlicht in den Detektor fällt. Außerdem sind zwei Polykapillaren vor der Röntgenröhre und dem Detektor angebracht um ein Fokusvolumen zu kreieren. Nur in diesem Bereich kann gemessen werden. " />
-&nbsp;
+
+![](/src/imgs/keywords/3D-µRFA.png)
+<figure>
+    <figcaption>Schematischer Aufbau der konfokalen 3D µ-RFA. Röntgenröhre und Detektor stehen in 90°-Winkel zueinander um sicher zu stellen, dass nur Fluoreszenzlicht in den Detektor fällt. Außerdem sind zwei Polykapillaren vor der Röntgenröhre und dem Detektor angebracht um ein Fokusvolumen zu kreieren. Nur in diesem Bereich kann gemessen werden.</figcaption>
+</figure> 
 
 Das Fokusvolumen kann wie bei der normalen RFA auch lateral über die Probe bewegt werden, um diese abzurastern. Zudem kann es aber auch in die Tiefe verschoben werden, wodurch die Probe auch in verschiedenen Schichten untersucht werden kann.
 Diese Technik ermöglicht es, Proben in 3D auf ihre Elementzusammensetzung zu untersuchen.
