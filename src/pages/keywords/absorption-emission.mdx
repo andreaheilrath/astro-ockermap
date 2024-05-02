@@ -2,12 +2,15 @@
 layout: '../../layouts/BlogPostLayout.astro'
 title: "Absorption und Emission von Licht"
 description: "Add desciption here"
-
-setup: |
-  import { Picture } from "astro-imagetools/components";
 ---
-import Figure from '/src/components/Figure.astro'
-import LaTeX from '/src/components/LaTeX.astro'
+
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+import LaTeX from '/src/components/LaTeX.astro';
+
+import schalenmodell from '/src/imgs/keywords/schalenmodell.png';
+import absemiss from '/src/imgs/keywords/abs-emiss.png';
 
 
 # Absorption und Emission von Licht
@@ -16,15 +19,12 @@ import LaTeX from '/src/components/LaTeX.astro'
 
 Um diesen Prozess genauer zu verstehen, stellen wir uns das Atom als Kugel vor, um die sich Elektronen auf Bahnen im immer selben Abstand bewegen. Diese Bahnen nennt man in der Physik Schalen. Je nachdem, an welcher Stelle im Periodensystem das Atom steht, befinden sich mehr oder weniger Elektronen auf jeder Schale. Die Schalen werden von innen nach außen befüllt und mit Großbuchstaben, beginnend mit K, bennant.
 
-![schalenmodell](/src/imgs/keywords/schalenmodell.png)
 
-<Figure url="/src/imgs/keywords/schalenmodell.png" text='Abb. 1: Darstellung zweier unterschiedlicher Atome. Um den Kern (blau) bewegen sich die Elektronen (rot) auf Schalen (K, L, M). Jede Schale kann nur eine bestimmte Menge an Elektronen aufnehmen, danach werden die überschüssigen Elektronen in die nächste Schale befüllt, solange bis genau so viele Elektronen in den Schalen wie Protonen im Kern sind. Bild © serlo' />
-&nbsp;
+<Figure url={schalenmodell.src} text='Abb. 1: Darstellung zweier unterschiedlicher Atome. Um den Kern (blau) bewegen sich die Elektronen (rot) auf Schalen (K, L, M). Jede Schale kann nur eine bestimmte Menge an Elektronen aufnehmen, danach werden die überschüssigen Elektronen in die nächste Schale befüllt, solange bis genau so viele Elektronen in den Schalen wie Protonen im Kern sind. Bild © serlo' />
 
 Trifft nun Licht mit einer bestimmten Energie auf das Atom, kann es ein Elektron von einer inneren Schale in eine höhere, äußere Schale anheben. Dabei gibt das Licht seine Energie an das Atom ganz oder in Teilen ab. Das Elektron verlässt nun seine Bahn und bewegt sich ab sofort auf einer anderen Bahn um den Kern des Atoms. Dieser Prozess wird **Absorption** genannt. Bei der <a href="/keywords/XRF">Röntgenfluoreszenzanalyse (RFA)</a> hat das einfallende Licht so viel Energie, dass das Elektron von dem Atom entfernt wird und nicht weiter gebunden ist. 
 
-<Figure url="/src/imgs/keywords/abs-emiss.png" text='Abb. 2: Für das Wasserstoffatom mit genau einem Proton und Elektron (a) ist hier der Prozess der Absorption (b) und die Emission (c) dargestellt. Bei der Absorption wird das Elektron durch z.B. Licht in eine höhere Schale angehoben. Das Elektron kann unter aussenden von Licht dann wieder zurück fallen. Bei hochenergetischer Strahlung wie z.B. Röntgenstrahlung kann das Elektron komplett aus dem Atom entfernt werden. Das nennt man dann Ionisation und passiert bei der RFA. Bild © serlo' />
-&nbsp;
+<Figure url={absemiss.src} text='Abb. 2: Für das Wasserstoffatom mit genau einem Proton und Elektron (a) ist hier der Prozess der Absorption (b) und die Emission (c) dargestellt. Bei der Absorption wird das Elektron durch z.B. Licht in eine höhere Schale angehoben. Das Elektron kann unter aussenden von Licht dann wieder zurück fallen. Bei hochenergetischer Strahlung wie z.B. Röntgenstrahlung kann das Elektron komplett aus dem Atom entfernt werden. Das nennt man dann Ionisation und passiert bei der RFA. Bild © serlo' />
 
 Der umgekehrte Prozess, also wenn ein Elektron aus einer höheren Schale in eine tiefere fällt, wird **Emission** genannt. Dabei wird Energie frei, die in Form von Licht abgegeben wird. Dieser Prozess kann durch einfallendes Licht angeregt werden, oder spontan passieren. Fällt ein Elektron spontan in eine tiefere Schale, spricht man auch von **Fluoreszenz**.
 
