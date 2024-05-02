@@ -3,14 +3,17 @@ const {text = 'Caption', url = '#'} = Astro.props;
 ---
 
 <figure>
-    <img src={url} alt="Figure" style="width:100%" />
+    <img src={url} alt="Figure" style="width:auto" />
     <figcaption>{text}</figcaption>
 </figure> 
 
 
 <style>
     img {
+        display: block;
         max-height: 420px;
+        margin-left: auto;
+        margin-right: auto;
     }
     figure {
         margin: auto;
