@@ -8,32 +8,20 @@
     --color-border-primary: hsl(0deg, 0%, 26%);
 
 
-    /* Color Palette */
-    --color-palette-grey-100: hsl(0deg, 0%, 100%);
-    --color-palette-grey-200: hsl(0deg, 0%, 98%);
-    --color-palette-grey-220: hsl(0deg, 0%, 96%);
-    --color-palette-grey-300: hsl(0deg, 0%, 92%);
-    --color-palette-grey-400: hsl(0deg, 0%, 60%);
-    --color-palette-grey-500: hsl(0deg, 0%, 40%);
-    --color-palette-grey-600: hsl(0deg, 0%, 26%);
-    --color-palette-grey-700: hsl(0deg, 0%, 20%);
-    --color-palette-grey-800: hsl(0deg, 0%, 6%);
-    --color-palette-grey-900: hsl(0deg, 0%, 0%);
-
 
     /* Typography */
     --font-family-body: 'Inter';
     --font-family-headline: 'Poppins';
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-    --font-size-100: 0.75rem; /* 12px */
+
     --font-size-200: 0.875rem; /* 14px */
     --font-size-300: 1rem; /* 16px */
     --font-size-400: 1.25rem; /* 20px */
     --font-size-500: 1.5rem; /* 24px */
     --font-size-600: 2.5rem; /* 40px */
-    --font-size-700: 3.5rem; /* 56px */
-    --font-size-800: 4.5rem; /* 72px */
+    --font-size-700: 2.5rem; /* 56px */
+
     --leading-100: 1.2;
     --leading-200: 1.5;
 

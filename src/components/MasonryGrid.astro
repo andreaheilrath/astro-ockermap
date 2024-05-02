@@ -64,35 +64,17 @@ body { font-family: sans-serif; }
 /* ---- grid ---- */
 
 .grid {
-  background: #EEE;
   max-width: 1200px;
-  counter-reset: grid-item;
 }
 
-/* clearfix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
-  counter-increment: grid-item;
-  content: counter(grid-item);
-  display: block;
-  color: white;
-  padding-top: 0.2em;
-  text-align: center;
-  font-size: 1.4rem;
 }
-
-/* ---- grid-item ---- */
 
 .grid-item {
   width: 360px;
   height: 400px;
   float: left;
-  background: rgb(240, 171, 122);
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .grid-item--height1 { height: 180px; }
