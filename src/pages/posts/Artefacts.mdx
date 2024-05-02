@@ -4,7 +4,18 @@ title: "Artefakte"
 description: "Add desciption here"
 image: "/src/imgs/homepage/09_Artefact.png"
 ---
-import Figure from '/src/components/Figure.astro'
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+
+import atrefakt1 from '/src/imgs/artefacts/Artefakt_01.png';
+import artefakt2a from '/src/imgs/artefacts/Artefakt_02a.png';
+import artefakt2b from '/src/imgs/artefacts/Artefakt_02b.png';
+import artefakt3 from '/src/imgs/artefacts/Artefakt_03.png';
+import artefakt4 from '/src/imgs/artefacts/Artefakt_04.png';
+import artefakt5a from '/src/imgs/artefacts/Artefakt_05a.png';
+import artefakt5b from '/src/imgs/artefacts/Artefakt_05b.png';
+import artefakt6 from '/src/imgs/artefacts/Artefakt_06.png';
 
 # Artefakte
 
@@ -17,7 +28,7 @@ Eine der ältesten bekannten Orte, an denen mit <a href="/keywords/Ochre/">Ocker
 
 Die meisten Bilder wurden mit roten, gelben und schwarzen Farben aus einer komplexen Vielfalt von Mineralpigmenten einschließlich Eisenverbindungen wie Eisenoxid (<a href="/keywords/Ochre/">Ocker</a>) gemalt. In der näheren Umgebung gibt es keine bekannten Vorkommen einiger der verwendeten Mineralien, was auf eine weiter entfernte Herkunft und/oder Handelswege schließen lässt <a href="https://doi.org/10.1063/1.2644480">[1]</a>.
 
-<Figure url='/src/imgs/artefacts/Artefakt_01.png' text="© Artstor, Art History Survey Collection." />
+<Figure url={atrefakt1.src} text="© Artstor, Art History Survey Collection." />
 &nbsp;
 
 #### Bemalte Kalkstein-Grabstele mit einem sitzenden Mann und zwei stehenden Figuren
@@ -29,12 +40,12 @@ Metropolitan Museum of Art, New York, Vereinigte Staaten <a href="https://www.me
 
 Ein Mann mit ockerfarbener Haut und blassgelbem Gewand sitzt in der Mitte auf einem erhöhten Hocker. In einer traditionellen Geste des Abschieds ergreift er die Hand einer Frau. Hinter ihm steht ein weiterer Mann, der einen dunkelvioletten Mantel trägt.
 
-<Figure url='/src/imgs/artefacts/Artefakt_02a.png' text="Das Alter der sitzenden Ockerfigur aus einer Grabstätte in Alexandria, Ägypten, wird auf etwa 2500 Jahre geschätzt. © Metropolitan Museum of Art, Public Domain" />
+<Figure url={artefakt2a.src} text="Das Alter der sitzenden Ockerfigur aus einer Grabstätte in Alexandria, Ägypten, wird auf etwa 2500 Jahre geschätzt. © Metropolitan Museum of Art, Public Domain" />
 &nbsp;
 
 Obwohl diese Stele in einem unterirdischen Grab an der Wand lehnend gefunden wurde, deuten ihre Größe und der Zapfenschnitt an der Unterseite darauf hin, dass sie ursprünglich in einen oberirdischen Sockel eingelassen war.
 
-<Figure url='/src/imgs/artefacts/Artefakt_02b.png' text="© Metropolitan Museum of Art, Public Domain" />
+<Figure url={artefakt2b.src} text="© Metropolitan Museum of Art, Public Domain" />
 &nbsp;
 
 #### Roter Ocker in einem Blattbehälter
@@ -47,7 +58,7 @@ Peabody Museum of Archaeology and Ethnology, Harvard University, Cambridge, Mass
 
 In ein Blatt eingewickelter und mit Pflanzenfasern gebundener Ocker aus Neuguinea, Jahr unbekannt.
 
-<Figure url='/src/imgs/artefacts/Artefakt_03.png' text="© Peabody Museum für Archäologie und Völkerkunde" />
+<Figure url={artefakt3.src} text="© Peabody Museum für Archäologie und Völkerkunde" />
 &nbsp;
 
 #### Beutel für Ocker
@@ -58,7 +69,7 @@ UBC Museum of Anthropology, Vancouver, British Columbia, Kanada <a href="https:/
 
 Ein Beutel aus Haut, der mit rotem Ocker bedeckt ist und drei Steine enthält. Jahr unbekannt.
 
-<Figure url='/src/imgs/artefacts/Artefakt_04.png' text="© UBC Museum für Anthropologie" />
+<Figure url={artefakt4.src} text="© UBC Museum für Anthropologie" />
 &nbsp;
 
 #### Gold Ochre (Ocker), aus Polen
@@ -68,9 +79,9 @@ Sammlung im Pratt Institute Foundations Lab, New York, Vereinigte Staaten <a hre
 
 Ein zeitgenössischer Behälter mit Ocker aus Polen aus der digitalen Sammlung des Pratt Institute, einer Universität, die Studiengänge in Architektur und Design anbietet. Der Ocker wurde von Kremer Pigmente erworben, einem deutschen Unternehmen, das sich auf die Herstellung historischer Pigmente spezialisiert hat und chemische, kontextbezogene und oft historische Informationen über Pigmente sowie Rezepte für die Zubereitung von Malmitteln bereitstellt. Der Gründer des Unternehmens, Georg Kremer, hat Chemie und Physik studiert und in physikalischer Chemie promoviert.
 
-<Figure url='/src/imgs/artefacts/Artefakt_05a.png' text="© Sammlung im Pratt Institure Foundaintons Lab" />
+<Figure url={artefakt5a.src} text="© Sammlung im Pratt Institure Foundaintons Lab" />
 
-<Figure url='/src/imgs/artefacts/Artefakt_05b.png' text="© Sammlung im Pratt Institure Foundaintons Lab" />
+<Figure url={artefakt5b.src} text="© Sammlung im Pratt Institure Foundaintons Lab" />
 &nbsp;
 
 #### Der Wald im Winter bei Sonnenuntergang
@@ -80,4 +91,4 @@ The Metropolitan Museum of Art, New York, Vereinigte Staaten <a href="https://ww
 
 Einem Bericht zufolge wollte Rousseau die Wirkung eines Sonnenuntergangs wiedergeben, den er im Dezember 1845 in Bas-Bréau, einem Teil des Waldes von Fontainebleau, gesehen hatte.
 
-<Figure url='/src/imgs/artefacts/Artefakt_06.png' text="© Metropolitan Museum of Art, Public Domain" />
+<Figure url={artefakt6.src} text="© Metropolitan Museum of Art, Public Domain" />

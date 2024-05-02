@@ -3,19 +3,26 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: "Unsere Ockerpigmente"
 description: "Add desciption here"
 ---
-import Figure from '/src/components/Figure.astro'
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+
+import ockerdeutsch from "/src/imgs/keywords/08_ocker-Deutsch.png";
+import ockeritalienisch from "/src/imgs/keywords/08_ocker-Italienisch.png";
+import ockermarokko from "/src/imgs/keywords/08_ocker-Marokko.png";
+import ockertaunus from "/src/imgs/keywords/08_ocker-Taunus.png";
 
 # Unsere Ockerpigmente
 
 Wir haben vier <a href="/keywords/Ochre/">Ocker</a> Pigmenten von <a href="https://www.kremer-pigmente.com/">Kremer Pigmenten</a> verwendet, deren Provenienz bekannt ist, und fünf visuell unterschiedliche Ockertöne von Kreuzberger Laden <a href="http://www.farben-kacza.de/">Farben Kacza</a>, deren Provenienz oder Zusammensetzung wir vorher nicht kannten.
 
-<Figure url="/src/imgs/keywords/08_ocker-Deutsch.png" text="Ocker dunkel, deutsch, lichter Ocker. Gemisch aus natürlichem Bariumsulfat (BaSO4), eisenoxidhaltiger Erde (Fe2O3 + MnO2 + SiO2) und Eisenoxidgelb (FeO(OH)). © Kremer Pigmente" />
+<Figure url={ockerdeutsch.src} text="Ocker dunkel, deutsch, lichter Ocker. Gemisch aus natürlichem Bariumsulfat (BaSO4), eisenoxidhaltiger Erde (Fe2O3 + MnO2 + SiO2) und Eisenoxidgelb (FeO(OH)). © Kremer Pigmente" />
 
-<Figure url="/src/imgs/keywords/08_ocker-Italienisch.png" text="Ocker dunkel, deutsch, lichter Ocker. © Kremer Pigmente" />
+<Figure url={ockeritalienisch.src} text="Ocker dunkel, deutsch, lichter Ocker. © Kremer Pigmente" />
 
-<Figure url="/src/imgs/keywords/08_ocker-Marokko.png" text="Gelbes marokkanisches Ocker. © Kremer Pigmente" />
+<Figure url={ockermarokko.src} text="Gelbes marokkanisches Ocker. © Kremer Pigmente" />
 
-<Figure url="/src/imgs/keywords/08_ocker-Taunus.png" text="Ocker aus dem Taunus, aus dem Gebiet der Oberen Lahn. © Kremer Pigmente" />
+<Figure url={ockertaunus.src} text="Ocker aus dem Taunus, aus dem Gebiet der Oberen Lahn. © Kremer Pigmente" />
 &nbsp;
 
 Zudem gab es weitere Ockertöne: Gold Ocker, Ocker Dunkel, Umbra Natur, Umbra Gebrannt und Umbra Grün. <br/>

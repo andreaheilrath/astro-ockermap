@@ -3,7 +3,11 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: "Röntgenfluoreszenzanalyse"
 description: "Add desciption here"
 ---
-import Figure from '/src/components/Figure.astro'
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+
+import rfaockersample from "/src/imgs/keywords/Area2_modified.png";
 
 # Röntgenfluoreszenzanalyse (RFA)
 
@@ -13,7 +17,7 @@ In dieses kann nun ein anderes Elektron, unter aussenden von Licht "fallen". Die
 
 Die Bestimmung dieser Fingerabdrücke kann mit dem speziellen Messverfahren, der <a href="/posts/XRF/">Röntgenfluoreszenzspektroskopie</a>, gemacht werden. Hierbei werden Röntgenstrahlen von einer <a href="/keywords/Xray-tube/">Röntgenröhre</a> auf eine Probe fokussiert. Dieser Fokus liegt im Mikrometerbereich, was dünner ist als der Durchmesser eines Haares. Diese fokussierte Strahlung dringen in die Probe ein und kreiert dort Löcher (fehlende Elektronen) in den einzelnen Atomen. Nach einer gewissen Zeit fallen dann Elektronen einer höheren Schale der Atome unter dem Aussenden von Licht genau dieser Differenzenergie in diese Löcher. Ein Röntgendetektor misst dann genau, wie viel Licht (Intensität) welcher Energie von der Probe ausgesendet wird. 
 
-<Figure url="/src/imgs/keywords/Area2_modified.png" text='Aufnahme unserer Ockerproben in einem RFA-Gerät an der TU Berlin. Röntgenröhre und der Detektor stehen in einem rechten Winkel (90°) zueinander, um sicherzustellen, dass nur die Strahlung von der Probe und nicht auch die der Röntgenröhre gemessen wird.' />
+<Figure url={rfaockersample.src} text='Aufnahme unserer Ockerproben in einem RFA-Gerät an der TU Berlin. Röntgenröhre und der Detektor stehen in einem rechten Winkel (90°) zueinander, um sicherzustellen, dass nur die Strahlung von der Probe und nicht auch die der Röntgenröhre gemessen wird.' />
 &nbsp;
 
 Durch Verschieben der Probe kann man so einen großen Bereich abrastern und bekommt an jedem Punkt die Informationen über die Zusammensetzung des Materials.

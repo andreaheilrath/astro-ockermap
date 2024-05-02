@@ -3,17 +3,35 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: "Messung und Auswertung"
 description: "Add desciption here"
 ---
-import Figure from '/src/components/Figure.astro'
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+
+import ockerimage from "/src/imgs/measurements/08_Ocker-bild.png";
+import samplemeasurement from "/src/imgs/measurements/Sample_measurement.png";
+import gelbmarokkanisch from "/src/imgs/measurements/pigment_gelbes_marokkanisches_Ocker.png";
+import ockertaunus from "/src/imgs/measurements/pigment_Ocker_aus_dem_Taunus.png";
+import ockerdeutsch from "/src/imgs/measurements/pigment_Ocker_deutsch.png";
+import ockeritalienisch from "/src/imgs/measurements/pigment_italienisches_Ocker.png";
+import ockerdunkel from "/src/imgs/measurements/pigment_Ocker_dunkel.png";
+import umbragruen from "/src/imgs/measurements/pigment_Umbra_grün.png";
+import ockergold from "/src/imgs/measurements/pigment_gold_Ocker.png";
+import umbranatur from "/src/imgs/measurements/pigment_Umbra_natur.png";
+import umbragebrannt from "/src/imgs/measurements/pigment_Umbra_gebrannt.png";
+import manganviolett from "/src/imgs/measurements/pigment_Manganviolett.png";
+import kobaltblau from "/src/imgs/measurements/pigment_Kobaltblau.png";
+import gelb from "/src/imgs/measurements/pigment_gelb.png";
+import zsfockermap from "/src/imgs/measurements/08_Ocker-bild_MAP.png";
 
 # Messung und Auswertung der Ockerproben
 
 Hier findest du die Messergebnisse zu <a href="/keywords/Our-pigments/">unseren Ockerpigmenten</a>. Die Messungen wurden an einem Aufbau für die Röntgenfluoreszenzanalyse (RFA) in einem Labor des BLiX (Berlin Laboratory for innovative X-ray Technologies) an der TU Berlin durchgeführt. 
 Die zu untersuchenden <a href="/keywords/Pigments/">Pigmente</a> wurden per Siebdruckverfahren auf ein Papier aufgebracht. Dabei wurden immer zwei Linien eines Pigments in einem gewissen Abstand aufgetragen. In die Lücke zwischen den zwei Linien wurde dann das nächste Pigment in weiteren zwei Linien aufgetragen usw. Ein Scan der Probe ist hier zu sehen: 
 
-<Figure url="/src/imgs/measurements/08_Ocker-bild.png" text="Abb. 1: Abgescannter Siebdruck der zu Acrylfarben verarbeiteten Pigmente. Dieser Druck dient außerdem als Probe für die Messungen mit der Röntgenfluoreszenzanalyse."/>
+<Figure url={ockerimage.src} text="Abb. 1: Abgescannter Siebdruck der zu Acrylfarben verarbeiteten Pigmente. Dieser Druck dient außerdem als Probe für die Messungen mit der Röntgenfluoreszenzanalyse."/>
 &nbsp;
 
-<Figure url="/src/imgs/measurements/Sample_measurement.png" text="Abb. 2: Eine vergrößerte Aufnahme der Probe. Skizziert sind die jeweiligen Messbereiche aus der RFA mit samt der zugehörigen ID (a). Auf der rechten Seite ist ein Bild der Proben aus der Messsoftware. Auch hier sind die Messbereiche eingezeichnet. Auf dieser Aufnahme sind die Proben bereits in einer Intensitätsmap dargestllt."/>
+<Figure url={samplemeasurement.src} text="Abb. 2: Eine vergrößerte Aufnahme der Probe. Skizziert sind die jeweiligen Messbereiche aus der RFA mit samt der zugehörigen ID (a). Auf der rechten Seite ist ein Bild der Proben aus der Messsoftware. Auch hier sind die Messbereiche eingezeichnet. Auf dieser Aufnahme sind die Proben bereits in einer Intensitätsmap dargestllt."/>
 &nbsp;
 
 Anschließend wurde die Probe mit den 12 Pigmenten in das Gerät zur <a href="/keywords/XRF">Röntgenfluoreszenzanalyse (RFA)</a> gegeben und ein Messbereich ausgewählt. Dazu wird von jeder Linie ein kleiner Bereich abgerastert und daraus dann ein <a href="/keywords/Fingerprints/">Spektrum</a> errechnet. Die Spektren der einzelnen Pigmente sind im Folgenden zu sehen.
@@ -22,69 +40,69 @@ Anschließend wurde die Probe mit den 12 Pigmenten in das Gerät zur <a href="/k
 
 #### gelbes marrokanisches Ocker
 
-<Figure url="/src/imgs/measurements/pigment_gelbes_marokkanisches_Ocker.png" text="Fingerabdruck (Spektrum) des marrokanischen gelben Ockers. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={gelbmarokkanisch.src} text="Fingerabdruck (Spektrum) des marrokanischen gelben Ockers. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### Ocker aus dem Taunus
 
-<Figure url="/src/imgs/measurements/pigment_Ocker_aus_dem_Taunus.png" text="Fingerabdruck (Spektrum) des Ockers aus dem Taunus. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={ockertaunus.src} text="Fingerabdruck (Spektrum) des Ockers aus dem Taunus. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### deutsches Ocker
 
-<Figure url="/src/imgs/measurements/pigment_Ocker_deutsch.png" text="Fingerabdruck (Spektrum) des deutschen Ockers. Dieser Ocker wurde nur einmal gemessen (schwarze Kurve)."/>
+<Figure url={ockerdeutsch.src} text="Fingerabdruck (Spektrum) des deutschen Ockers. Dieser Ocker wurde nur einmal gemessen (schwarze Kurve)."/>
 &nbsp;
 
 #### italienisches Ocker
 
-<Figure url="/src/imgs/measurements/pigment_italienisches_Ocker.png" text="Fingerabdruck (Spektrum) des italienischen Ockers. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={ockeritalienisch.src} text="Fingerabdruck (Spektrum) des italienischen Ockers. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### Ocker dunkel
 
-<Figure url="/src/imgs/measurements/pigment_Ocker_dunkel.png" text="Fingerabdruck (Spektrum) des Pigments 'Ocker dunkel'. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={ockerdunkel.src} text="Fingerabdruck (Spektrum) des Pigments 'Ocker dunkel'. Dieser Ocker wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### Umbra grün
 
-<Figure url="/src/imgs/measurements/pigment_Umbra_grün.png" text="Fingerabdruck (Spektrum) des Pigments 'Umbra grün'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={umbragruen.src} text="Fingerabdruck (Spektrum) des Pigments 'Umbra grün'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### gold Ocker
 
-<Figure url="/src/imgs/measurements/pigment_gold_Ocker.png" text="Fingerabdruck (Spektrum) des Pigments 'gold Ocker'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={ockergold.src} text="Fingerabdruck (Spektrum) des Pigments 'gold Ocker'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### Umbra natur
 
-<Figure url="/src/imgs/measurements/pigment_Umbra_natur.png" text="Fingerabdruck (Spektrum) des Pigments 'Umbra natur'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={umbranatur.src} text="Fingerabdruck (Spektrum) des Pigments 'Umbra natur'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### Umbra gebrannt
 
-<Figure url="/src/imgs/measurements/pigment_Umbra_gebrannt.png" text="Fingerabdruck (Spektrum) des Pigments 'Umbra gebrannt'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={umbragebrannt.src} text="Fingerabdruck (Spektrum) des Pigments 'Umbra gebrannt'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 ### Bunte Pigmente
 
 #### Manganviolett
 
-<Figure url="/src/imgs/measurements/pigment_Manganviolett.png" text="Fingerabdruck (Spektrum) des Pigments 'Manganviolett'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={manganviolett.src} text="Fingerabdruck (Spektrum) des Pigments 'Manganviolett'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### Kobaltblau
 
-<Figure url="/src/imgs/measurements/pigment_Kobaltblau.png" text="Fingerabdruck (Spektrum) des Pigments 'Kobaltblau'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
+<Figure url={kobaltblau.src} text="Fingerabdruck (Spektrum) des Pigments 'Kobaltblau'. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve)."/>
 &nbsp;
 
 #### gelb
 
-<Figure url="/src/imgs/measurements/pigment_gelb.png" text="Fingerabdruck (Spektrum) des gelben Pigments aus den Besänden der UdK Berlin. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve). Kadmium konnte nicht nachgewiesen werden. Somit ist dieses Gelb unbedenklich zu verwenden."/>
+<Figure url={gelb.src} text="Fingerabdruck (Spektrum) des gelben Pigments aus den Besänden der UdK Berlin. Dieses Pigment wurde zwei mal gemessen (blaue und orangene Kurve) und dann gemittelt (schwarze Kurve). Kadmium konnte nicht nachgewiesen werden. Somit ist dieses Gelb unbedenklich zu verwenden."/>
 &nbsp;
 
 #### Zusammenfassung
 
-<Figure url="/src/imgs/measurements/08_Ocker-bild_MAP.png" text="Abb. 3: Zusammenfassung der Messugnen aus der Messsoftware. Der Messbereich ist in jedem Bild gezeigt mit den 24 Proben. Die Elemente stehen über den jeweiligen Bildern. In den Bildern ist die Intensität des jeweiligen Elements dargestellt."/>
+<Figure url={zsfockermap.src} text="Abb. 3: Zusammenfassung der Messugnen aus der Messsoftware. Der Messbereich ist in jedem Bild gezeigt mit den 24 Proben. Die Elemente stehen über den jeweiligen Bildern. In den Bildern ist die Intensität des jeweiligen Elements dargestellt."/>
 &nbsp;
 
 Hier ist in einem Bild dargestellt, was die ganzen Einzelspektren zeigen. Die Intensität jedes Elements in den einzelnen Proben ist hier anhand der Intensität der jeweiligen Abschnitte des Bildes zu sehen.

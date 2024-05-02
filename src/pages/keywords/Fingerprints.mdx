@@ -3,14 +3,18 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: "Fingerprints"
 description: "Add desciption here"
 ---
+import { Image } from 'astro:assets';
+
 import Figure from '/src/components/Figure.astro'
+
+import abseemissspectrum from "/src/imgs/keywords/abs-ems-spectrum.png";
 
 # Spektren 
 ## Fingerabdrücke der Elemente:
 
 #### Ein Spektrum in der Physik beschreibt, wie die Intensität von der <a href="/keywords/Wavelength-energy-frequency/">Energie, Frequenz oder Wellenlänge</a> abhängt. Weißes Licht besteht aus verschiedenen spektralen Farben, die z.B. durch ein Prisma oder in einem Regenbogen sichtbar sind. In einem Spektrum ist nun ersichtlich, ob und wie stark eine bestimmte spektrale Farbe in dem betrachteten Licht vorhanden ist. Die spektrale Farbe im Röntgenlicht kann nun einem bestimmten Element zugeordnet werden, sie ist der charakteristische Fingerabdruck dieses Elements. Im Beispiel des Regenbogens hat somit jedes Element einen anderen, einzigartigen Regenbogen. In der Physik spricht man davon, dass jedes Element einen eigenen charakteristischen, spektralen Fingerabdruck besitzt. Dieser kann dann eindeutig einem Element zugeordnet werden. So kann man z.B. durch Analyse des Lichts von Sternen herausfinden, welche Elemente dort vorhanden sind. 
 
-<Figure url="/src/imgs/keywords/abs-ems-spectrum.png" text='SSchematische Darstellung der Entstehung von Spektren. Wird Strahlung (etwa die eines Sterns) auf ein Gitter gelenkt, entsteht dabei ein Emissionsspektrum (a). Dabei wird das Licht in seine einzelnen Farben aufgespalten, ähnlich wie bei einem Prisma. Bei dem Absorptionsspektrum wird weißes Licht (Licht mit allen Farben) durch ein zu untersuchendes Objekt geschickt. Hinter dem Objekt wird dann geschaut, welche Farben aus dem weißen Licht fehlen, indem das Licht wieder auf ein Gitter gelenkt wird (b). Bild © byjus' />
+<Figure url={abseemissspectrum.src} text='Schematische Darstellung der Entstehung von Spektren. Wird Strahlung (etwa die eines Sterns) auf ein Gitter gelenkt, entsteht dabei ein Emissionsspektrum (a). Dabei wird das Licht in seine einzelnen Farben aufgespalten, ähnlich wie bei einem Prisma. Bei dem Absorptionsspektrum wird weißes Licht (Licht mit allen Farben) durch ein zu untersuchendes Objekt geschickt. Hinter dem Objekt wird dann geschaut, welche Farben aus dem weißen Licht fehlen, indem das Licht wieder auf ein Gitter gelenkt wird (b). Bild © byjus' />
 
 &nbsp;
 

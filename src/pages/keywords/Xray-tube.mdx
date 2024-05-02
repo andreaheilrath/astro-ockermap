@@ -3,8 +3,13 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: "Röntgenröhre"
 description: "Add desciption here"
 ---
-import Figure from '/src/components/Figure.astro'
-import LaTeX from '/src/components/LaTeX.astro'
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+import LaTeX from '/src/components/LaTeX.astro';
+
+import xraytube from "/src/imgs/keywords/Xray_tube.svg";
+import emissionspectrum from "/src/imgs/keywords/5090.svg";
 
 # Die Röntgenröhre
 
@@ -12,7 +17,7 @@ import LaTeX from '/src/components/LaTeX.astro'
 
 #### Eine Röntgenröhre ist eine einfache Möglichkeit, <a href="/keywords/Xrays/">Röntgenstrahlung</a> zu erzeugen. Dabei zeichent sich die, durch die Röntgenröhre emittierte Strahlung, durch eine große Bandbreite und charakteristische Linien aus. 
 
-<Figure url="/src/imgs/keywords/Xray_tube.svg" text="Abb. 1: Schematischer Aufbau einer Röntgenröhre. Eine Heizsapnnung löst Elektronen aus der Glühkathode aus. Diese werden fokussiert und auf eine Anode hin beschleunigt. Hier werden sie dann unter aussenden von Röntgenstrahlung abgebremst. Bild © Joachim Herz Stiftug"/>
+<Figure url={xraytube.src} text="Abb. 1: Schematischer Aufbau einer Röntgenröhre. Eine Heizsapnnung löst Elektronen aus der Glühkathode aus. Diese werden fokussiert und auf eine Anode hin beschleunigt. Hier werden sie dann unter aussenden von Röntgenstrahlung abgebremst. Bild © Joachim Herz Stiftug"/>
 &nbsp;
 
 Die Funktionsweise einer solchen Röhre ist relativ simpel. In einer vakuumierten Glasröhre wird eine Heizspannung an einen dünnen Draht angelegt und heizt diesen auf, bis er glüht. An dieser Glühkathode treten Elektronen aus dem Draht aus. Diese freien Ladungsträger werden nun in einem elektrischen Feld, welches zwischen der Kathode und einer Anode anliegt, beschleunigt. Dabei werden Beschleunigungsspannungen von 1kV - 150kV zwischen der Kathode und Anode angelegt. Die Elektronen erhalten dabei Energie aus dem elektrischen Feld, welches direkt proportional zur Beschleunigungsspannung ist:
@@ -22,7 +27,7 @@ Die Funktionsweise einer solchen Röhre ist relativ simpel. In einer vakuumierte
 
 Hierbei ist *e* die Elementarladung, also die kleinste mögliche Ladungsmenge eines Elektrons. Um diesen Strahl aus Elektronen zu fokussieren, ist ein sogenannter ringförmiger Wehneltzylinder in der Nähe der Kathode angebracht. Dieser ist negativ geladen und fokussiert somit die ebenfalls negativ geladenen Elektronen durch elektrische Abstoßung. Beim Auftreffen der Elektronen an der Anode, die meist aus einem dichten Material besteht, werden die Elektronen an den Atomrümpfen abgebremst und emittieren dabei ihre verlorene Energie als Röntgenstrahlung. Da das Abbremsen ein statistischer Prozess ist, zeigt diese sogenannte Bremsstrahlung ein kontinuierliches Spektrum. 
 
-<Figure url="/src/imgs/keywords/5090.svg" text="Abb. 2: Das Emissionsspektrum einer Röntgenröhre in Intensität aufgetragen über die Wellenlänge des Lichts. Es besteht aus dem kontiuierlichem Untergrund der Bremsstrahlung (grün gestrichelt) und der charakteristischen Linienstrahlung (grüne Linie). Bild © Uni Göttingen " />
+<Figure url={emissionspectrum.src} text="Abb. 2: Das Emissionsspektrum einer Röntgenröhre in Intensität aufgetragen über die Wellenlänge des Lichts. Es besteht aus dem kontiuierlichem Untergrund der Bremsstrahlung (grün gestrichelt) und der charakteristischen Linienstrahlung (grüne Linie). Bild © Uni Göttingen " />
 &nbsp;
 
 Zudem können die beschleunigten Elektronen mit den Elektronen im Anodenmaterial stoßen und durch Übertragung ihrer Energie in ein höheres Energieniveau anregen (<a href="/keywords/Absorption-emission">Absorption</a>) oder das Elektron aus dem Material entfernen (Ionisation). Die dabei entstehenden Löcher können dann durch "herunterfallen" anderer Elektronen gefüllt werden. Dabei emittieren sie Licht mit einer charakteristischen Wellenlänge (<a href="/keywords/Fluorescence/">Fluoreszenz</a>).

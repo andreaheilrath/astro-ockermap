@@ -3,7 +3,11 @@ layout: '../../layouts/BlogPostLayout.astro'
 title: "Medizinische Anwendung von Röntgenstrahlung"
 description: "Add desciption here"
 ---
-import Figure from '/src/components/Figure.astro'
+import { Image } from 'astro:assets';
+
+import Figure from '/src/components/Figure.astro';
+
+import xray from "/src/imgs/keywords/xray_image.webp";
 
 # Medizinische Anwendung von Röntgenstrahlung
 
@@ -14,7 +18,7 @@ Das Röntgen gehört zu dem Standard-Toolkit eines Arztes. Sei es bei dem Verdac
 
 Der Grundlegende Aufbau eines solchen Röntgengeräts ist im Prinzip eine <a href="/keywords/Xray-tube/">Röntgenröhre</a>, die auf einen Patienten reichtet werden kann und dahinter ein Schirm (Detektor) auf dem das Bild entsteht. Diese erzeugt die Röntgenstrahlung, mit der ein Patient durchstrahlt wird. Hinter dem Patienten befindet sich dann eine Fotoplatte oder in modernen Geräten ein digitaler Detektor, der die Röntgenstrahlung auffängt. Ähnlich wie bei einem Fotoapparat. Auf einem so aufgenommenen Röntgenbild sind nun etwa die inneren Organe und Knochen sichtbar, wodurch Brüche, Tumore oder Ähnliches direkt visuell erkannt werden können. Der Kontrast im Bild entsteht prinzipiell dadurch, dass Materie unterschiedlich stark die Röntgenstrahlung absorbiert. Die härteren und dichteren Knochen lassen weniger der Strahlung durch, als die weicheren Muskeln und Fettgewebe des Körpers. Dadurch entsteht ein Intensitätsunterschied der Röntgenstrahlung beim Durchleuchten.  
 
-<Figure url="/src/imgs/keywords/xray_image.webp" text='Röntgenaufnahme eines menschlichen Torsos. Es sind die einzelnen Knochen, die Lungen und anderes Gewebe zu erkennen. Bild © stiftung-gesundheitswissen' />
+<Figure url={xray.src} text='Röntgenaufnahme eines menschlichen Torsos. Es sind die einzelnen Knochen, die Lungen und anderes Gewebe zu erkennen. Bild © stiftung-gesundheitswissen' />
 &nbsp;
 
 Diese Aufnahmen sind als Negative zu verstehen, mit Orten, an denen besonders viel Strahlung auftrifft, werden hier schwarz dargestellt. Je heller die Grautöne sind, desto weniger Strahlung ist an diesem Ort aufgetroffen. 
@@ -30,7 +34,7 @@ Bei der Untersuchung mit Röntgenstrahlung erfährt der Körper eine erhöhte St
 |                           	| Beckenübersicht                                                                     	| 0.3                                   	|
 |                           	| Bauchraum (Abdomenübersicht)                                                        	| 0.4                                   	|
 | *Röntgendurchleuchtungen* 	| Darm (Dünndarm bzw. Kolonkontrasteinlauf)                                           	| 5                                     	|
-|                           	| PTCA (perkutane transluminate coronare Angioplastie zur Herzkranzgefäßerweiterung)) 	| 9                                     	|
+|                           	| PTCA (perkutane transluminate coronare Angioplastie zur Herzkranzgefäßerweiterung) 	| 9                                     	|
 | *CT-Untersuchungen*       	| Hirnschädel                                                                         	| 2                                     	|
 |                           	| Lendenwirbelsäule (Bandscheibe)                                                     	| 2                                     	|
 |                           	| Brustkorb (Thorax)                                                                  	| 5                                     	|
